@@ -1,4 +1,4 @@
-# Skyline — Weather Forecast Dashboard
+# Skyline Weather Forecast Dashboard
 
 A production-oriented weather dashboard built with plain HTML5, CSS3, and
 vanilla JavaScript (ES modules). No frameworks, no build step — open
