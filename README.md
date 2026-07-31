@@ -1,7 +1,7 @@
 # Skyline Weather Forecast Dashboard
 
 A production-oriented weather dashboard built with plain HTML5, CSS3, and
-vanilla JavaScript (ES modules). No frameworks, no build step — open
+vanilla JavaScript (ES modules). No frameworks, no build step open
 `index.html` (via a local server) and it runs.
 
 ## Features
@@ -28,7 +28,7 @@ vanilla JavaScript (ES modules). No frameworks, no build step — open
 Weather and geocoding data come from **[Open-Meteo](https://open-meteo.com)**.
 It was chosen deliberately for this client-side project because:
 
-- It requires **no API key** — there is nothing secret to protect, so the
+- It requires **no API key** there is nothing secret to protect, so the
   app has no `.env` file and no backend proxy to manage.
 - It's free for non-commercial use and CORS-enabled for direct browser
   requests.
@@ -57,7 +57,7 @@ weather-app/
 │   ├── location.js          navigator.geolocation wrapper
 │   ├── search.js            Debounced city search + keyboard navigation
 │   ├── storage.js           All localStorage reads/writes
-│   ├── ui.js                 DOM rendering — the only module that paints
+│   ├── ui.js                 DOM rendering the only module that paints
 │   └── app.js                Entry point: wires everything together
 │
 ├── assets/icons/            Standalone SVG icon set (documentation/reuse)
@@ -82,7 +82,7 @@ some browsers).
 
 ## Notes / known limitations
 
-- Open-Meteo's WMO weather codes don't distinguish "mist" from "haze" —
+- Open-Meteo's WMO weather codes don't distinguish "mist" from "haze"
   both are treated as fog for icon/labeling purposes.
 - Reverse geocoding (turning coordinates into a city name) isn't offered by
   this provider, so "Use current location" labels the reading using the
