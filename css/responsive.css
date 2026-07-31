@@ -1,0 +1,43 @@
+/* Responsive layout */
+
+@media (max-width: 860px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .quick-stats { grid-template-columns: repeat(3, 1fr); row-gap: 16px; }
+}
+
+@media (max-width: 640px) {
+  .app { padding: 14px 14px 36px; gap: 16px; }
+
+  .app-header { flex-wrap: wrap; }
+  .brand { order: 1; }
+  .header-actions { order: 2; margin-left: auto; }
+  .search-form { order: 3; max-width: none; width: 100%; flex-basis: 100%; }
+
+  .current-weather { padding: 22px 18px; border-radius: var(--radius-m); }
+  .current-main { gap: 16px; margin: 18px 0 20px; }
+  .condition-icon { width: 64px; height: 64px; }
+  .temp-value { font-size: 3.6rem; }
+  .condition-label { font-size: 1rem; }
+
+  .quick-stats { grid-template-columns: repeat(2, 1fr); gap: 14px 10px; }
+
+  .panel { padding: 18px 16px 20px; border-radius: var(--radius-m); }
+
+  .daily-item { grid-template-columns: 84px 24px 1fr auto; gap: 10px; }
+
+  .details-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .settings-panel { right: -8px; width: 220px; }
+
+  .sun-times { gap: 24px; }
+}
+
+@media (max-width: 380px) {
+  .quick-stats { grid-template-columns: repeat(2, 1fr); }
+  .temp-value { font-size: 3.1rem; }
+  .hourly-item { width: 66px; }
+}
+
+/* Ensure nothing ever creates horizontal scroll on the page itself */
+html, body { overflow-x: hidden; }
+.current-weather, .panel { max-width: 100%; }
